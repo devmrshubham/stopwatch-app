@@ -36,3 +36,10 @@
 .reset {
   background-color: rgb(250, 185, 8);
 }
+
+@media (min-width: 200px) and(max-width:480px) {
+  .container {
+    width: 100%;
+  
+  }
+}

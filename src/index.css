@@ -1,5 +1,8 @@
+/* body{
+  overflow-x: hidden;
+}
 .container {
-  width: 400px;
+  width: 25rem;
   margin: auto;
   text-align: center;
   background-color: white;
@@ -9,11 +12,7 @@
   margin-top: 55px;
   font-family: "Roboto", sans-serif;
 }
-.container h1 {
-  min-width: 12.5rem;
-  max-width: inherit;
-  font-size: 3.125rem;
-}
+
 .container button {
   position: relative;
   margin-top: 10%;
@@ -35,11 +34,34 @@
 }
 .reset {
   background-color: rgb(250, 185, 8);
+} */
+
+.container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  text-align: center;
+  padding: 1.25rem;
+
+  min-width: 12.5rem;
 }
 
-@media (min-width: 200px) and(max-width:480px) {
+.container .row .col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.container .row .buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .row .col .btn {
+  margin: 5px 0px;
+}
+
+@media (min-width: 400px) {
   .container {
-    width: 100%;
-  
+    width: 25rem;
   }
 }

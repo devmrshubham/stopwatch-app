@@ -46,15 +46,22 @@ const Stopwatch = () => {
     return (
         <>
             <div className="container">
+                <div className="row">
+                    <div className="col-12 col-sm-12 ">
+                        
+                        <h1>{time.hr + " : " + time.min + " : " + time.sec + " : " + time.milli} </h1>
+                        <br />
 
-                <h1>{time.hr + " : " + time.min + " : " + time.sec + " : " + time.milli} </h1>
 
-
-                <div className="buttons">
-                    <button className="start" onClick={() => start()}>start</button>
-                    <button className="stop" onClick={() => stop()}>stop</button>
-                    <button className="reset" onClick={() => reset()}>reset</button>
+                        <div className="buttons">
+                            <button className="btn btn-primary" onClick={() => start()}>start</button>
+                            <button className="btn btn-danger" onClick={() => stop()}>stop</button>
+                            <button className="btn btn-warning" onClick={() => reset()}>reset</button>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </>
     );
